@@ -682,6 +682,7 @@ mod tests {
     }
 
     #[test]
+    #[cfg(feature = "rustc-serialize")]
     fn test_serialize() {
         use rustc_serialize::json;
 
@@ -695,6 +696,7 @@ mod tests {
     }
 
     #[test]
+    #[cfg(feature = "rustc-serialize")]
     fn test_deserialize() {
         use rustc_serialize::json;
 
@@ -710,6 +712,7 @@ mod tests {
     }
 
     #[test]
+    #[cfg(feature = "rustc-serialize")]
     fn test_serialize_roundtrip() {
         use rustc_serialize::json;
 
